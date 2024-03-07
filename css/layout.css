@@ -179,9 +179,13 @@ input[type="range"]::-webkit-slider-thumb {
   .num-btn,
   .delete-btn {
     width: 100%;
+    /* max-width: 60px; */
   }
   .reset-btn,
   .equals-btn {
     width: 100%;
+  }
+  #keypad {
+    gap: 12px;
   }
 }
