@@ -1,0 +1,64 @@
+body {
+  background-color: #e6e6e6;
+}
+
+.header-text {
+  color: #36362c;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 26px;
+  background-color: #d2cdcd;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  height: 26px;
+  background-color: #d2cdcd;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #c85402;
+}
+
+#result-box {
+  background-color: #eeeeee;
+}
+
+#result-value {
+  color: #36362c;
+}
+
+#keypad {
+  background-color: #d2cdcd;
+}
+
+.num-btn {
+  background-color: #e5e4e1;
+  box-shadow: inset 0px -4px 0px #a79e91;
+}
+.num-btn p {
+  color: #36362c;
+}
+
+.delete-btn,
+.reset-btn {
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #1b6066;
+}
+
+.delete-btn p,
+.reset-btn p {
+  color: #ffffff;
+}
+
+.equals-btn {
+  background-color: #c85402;
+  box-shadow: inset 0px -4px 0px #873901;
+}
+
+.equals-btn p {
+  color: #ffffff;
+}

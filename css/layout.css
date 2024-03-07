@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title {
+  font-size: 32px;
+  letter-spacing: -0.53px;
+  font-weight: 700;
+}
+#theme-chooser {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 26px;
+}
+
+#slider-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#slider-number-group {
+  display: flex;
+  justify-content: space-between;
+  width: 71px;
+  /* gap: 10px; */
+  width: 100%;
+  padding: 0 5px;
+}
+
+#theme-range {
+  width: 71px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 71px;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 26px;
+  border-radius: 13px;
+  padding: 0 5px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  height: 26px;
+  border-radius: 13px;
+  padding: 0 5px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: 6px; /* Centers thumb on the track */
+  /* margin-left: 2px; */
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+#result-box {
+  width: 100%;
+  height: 128px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#result-value {
+  letter-spacing: -0.93px;
+  font-size: 56px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+#keypad {
+  height: 480px;
+  padding: 32px 30px;
+  border-radius: 10px;
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr); */
+  grid-template-areas:
+    "7 8 9 delete"
+    "4 5 6 plus"
+    "1 2 3 minus"
+    "decimal 0 divide times"
+    "reset reset equals equals";
+  gap: 24px;
+}
+
+#btn-reset {
+  grid-area: reset;
+}
+
+#btn-equals {
+  grid-area: equals;
+}
+
+#keypad .num-btn p {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.67px;
+}
+
+.num-btn,
+.delete-btn,
+.reset-btn,
+.equals-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.num-btn,
+.delete-btn {
+  width: 101px;
+}
+.reset-btn,
+.equals-btn {
+  width: 227px;
+}
+
+.delete-btn,
+.reset-btn,
+.equals-btn {
+  font-size: 28px;
+  letter-spacing: -0.47px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding: 30px 24px;
+  }
+  main {
+    width: 100%;
+    padding: 24px;
+  }
+  .num-btn,
+  .delete-btn {
+    width: 100%;
+  }
+  .reset-btn,
+  .equals-btn {
+    width: 100%;
+  }
+}

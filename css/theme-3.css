@@ -1,0 +1,63 @@
+body {
+  background-color: #17062a;
+}
+
+.header-text {
+  color: #ffe53d;
+}
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 26px;
+  background-color: #1e0936;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  height: 26px;
+  background-color: #1e0936;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #00ded0;
+}
+
+#result-box {
+  background-color: #1e0936;
+}
+
+#result-value {
+  color: #ffe53d;
+}
+
+#keypad {
+  background-color: #1e0936;
+}
+
+.num-btn {
+  background-color: #331c4d;
+  box-shadow: inset 0px -4px 0px #881c9e;
+}
+.num-btn p {
+  color: #ffe53d;
+}
+
+.delete-btn,
+.reset-btn {
+  background-color: #56077c;
+  box-shadow: inset 0px -4px 0px #be15f4;
+}
+
+.delete-btn p,
+.reset-btn p {
+  color: #ffffff;
+}
+
+.equals-btn {
+  background-color: #00ded0;
+  box-shadow: inset 0px -4px 0px #6cf9f1;
+}
+
+.equals-btn p {
+  color: #1a2327;
+}
