@@ -101,7 +101,8 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 #result-value {

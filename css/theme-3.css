@@ -22,6 +22,10 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #00ded0;
 }
 
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #93fff8;
+}
+
 #result-box {
   background-color: #1e0936;
 }
@@ -42,10 +46,19 @@ input[type="range"]::-webkit-slider-thumb {
   color: #ffe53d;
 }
 
+.num-btn:hover {
+  background-color: #6c34ac;
+}
+
 .delete-btn,
 .reset-btn {
   background-color: #56077c;
   box-shadow: inset 0px -4px 0px #be15f4;
+}
+
+.delete-btn:hover,
+.reset-btn:hover {
+  background-color: #8631af;
 }
 
 .delete-btn p,
@@ -60,4 +73,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 .equals-btn p {
   color: #1a2327;
+}
+
+.equals-btn:hover {
+  background-color: #93fff8;
 }

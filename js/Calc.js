@@ -88,6 +88,6 @@ export default class Calc {
     this.leftOperand = 0;
     this.rightOperand = 0;
     this.operator = '';
-    this.display.textContent = this.result.length <= 12 ? this.result : this.result.toExponential(2);
+    this.display.textContent = this.result.toString().length > 12 ? this.result.toPrecision(10) : this.result.toLocaleString('en-US');
   }
 }
