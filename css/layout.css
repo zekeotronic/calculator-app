@@ -139,6 +139,7 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -0.67px;
+  user-select: none;
 }
 
 .num-btn,
@@ -150,6 +151,7 @@ input[type="range"]::-webkit-slider-thumb {
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
+  user-select: none;
 }
 .num-btn,
 .delete-btn {
